@@ -497,14 +497,144 @@
 # Take a string input and count how many consonants
 # it contains using loops.
 
-st = input("Enter a string :- ")
+# st = input("Enter a string :- ")
 
-count = 0
-vowel = "aeiouAEIOU"
+# count = 0
+# vowel = "aeiouAEIOU"
 
-for i in st:
-    if i in vowel:
-        pass
-    else:
-        count += 1
-print("The consonant number in sentence is :- ",count) 
+# for i in st:
+#     if i in vowel:
+#         pass
+#     else:
+#         count += 1
+# print("The consonant number in sentence is :- ",count) 
+
+#===========================================================================
+
+# Section B Number-Based Problems 20 Marks)
+
+
+# 9. Prime Digits Count 2 Marks)
+# Take a numeric string and count how many digits are prime (2, 3, 5, 7)
+
+# st = "prime23576"
+# count = 0
+# l = len(st)
+
+# for i in st:
+#     if i.isdigit():
+#         num = int(i)
+#         count_prime = 0
+
+#         for k in range(1, num + 1):
+#             if num % k == 0:   # ✅ FIXED HERE
+#                 count_prime += 1
+
+#         if count_prime == 2:  # ✅ Prime check
+#             count += 1
+
+# print("Prime digits count:", count)
+
+
+# st = input("Enter a numeric string: ")
+# prime = "2357"
+# count = 0
+
+# for ch in st:
+#     if ch in prime:
+#         count += 1
+
+# print("Prime digits count:", count)
+
+#===========================================================================
+
+# 10. Sum of Digits in Alphanumeric String 3 Marks)
+# Add only the digits from the input string Example: "a1b4c2" → 
+
+# st = input("Enter the string :- ")
+
+# sum = 0
+# for ch in st:
+#     if ch.isdigit():
+#         sum = sum + int(ch)
+# print("The sum is :- ",sum)
+
+#===========================================================================
+
+# 11. Leap Year Checker (3 Marks)
+# Check if a given year is a leap year using correct logic
+
+# year = int(input("Enter the year :- "))
+# if year % 4 == 0 and year % 400 == 0 and year % 100 != 0:
+#     print(year, "is a leap year")
+# else:
+#     print(year, "is not leap year")
+
+#===========================================================================
+
+# 2. Print Prime Numbers (2 to 100) (3 Marks)
+# Print all prime numbers between 2 and 100 using loops
+
+
+# for i in range(2 ,101):
+    # count = 0
+    # for j in range(1,i+1):
+    #     if i%j==0:
+    #         count+=1
+    # if count == 2:
+    #     print(j)
+
+#===========================================================================
+
+# 13. Factorial Using Loop 3 Marks)
+# Take a number input and print its factorial using a for loop (no recursion)
+
+# n = int(input("Enter the number :- "))
+# fact = 1
+# for i in range(1,n+1):
+#     fact = fact * i
+# print("The factorial is :- ",fact) 
+
+#===========================================================================
+
+# 14. Fibonacci Series Using Loop 3 Marks)
+# Take n input, then print the first n Fibonacci numbers using loops only .
+# Example for n=7 → 0 1 1 2 3 5 8
+
+# n = int(input("Enter the number :- "))
+# a=0
+# b=1
+# print("Fabonacci series :- ")
+# print(a, end=" ")
+# for i in  range(n+1):
+#     a,b = a+b,a
+#     print(a, end=" ")
+
+#===========================================================================
+
+# 15. Number Classification (3 Marks) 
+# Take a number and prin t how many digits are:
+# * Even digits # * Odd digits 
+# * Zero digits*(Example: input: 302014 → even=2 odd=2 zero=2)
+
+# n = int(input("Enter a number :- "))
+# even = 0
+# odd = 0
+# zero = 0
+
+# while n > 0:
+#     d = n % 10
+
+#     if d == 0:
+#         zero += 1
+#     elif d % 2 == 0:
+#         even += 1
+#     else:
+#         odd += 1
+
+#     n = n // 10   # remove last digit
+
+# print("The even digits are :-", even)
+# print("The odd digits are :-", odd)
+# print("The zero digits are :-", zero)
+
