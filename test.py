@@ -612,7 +612,7 @@
 
 #===========================================================================
 
-# 15. Number Classification (3 Marks) 
+# 15. Number Classification
 # Take a number and prin t how many digits are:
 # * Even digits # * Odd digits 
 # * Zero digits*(Example: input: 302014 → even=2 odd=2 zero=2)
@@ -638,3 +638,87 @@
 # print("The odd digits are :-", odd)
 # print("The zero digits are :-", zero)
 
+
+
+#===========================================================================
+
+#===========================================================================
+
+#===========================================================================
+
+                # LIST
+
+# reverse the string
+
+# l1 = [1,2,3,4,5,6]
+# left = 0
+# right = len(l1)-1
+# while left <= right:
+#     l1[left],l1[right] = l1[right],l1[left]
+#     left+=1
+#     right-=1
+# print(l1)
+#===========================================================================
+
+# li = [1,2,3,4,5,6,7,8,9,10]
+
+# first list  -> square of the elements -> odd index
+# second list  -> cube of the elements -> even index
+
+# first_list=[]
+# second_list=[]
+
+# for i in range(len(li)):
+#     if i % 2 != 0:
+#         t = li[i]**2
+#         first_list.append(t)
+#     else:
+#         c = (li[i]**3)
+#         second_list.append(c)
+# print("First list :- ",first_list)
+# print("Second list :- ",second_list)
+#===========================================================================
+
+# find the length of the list
+
+# li=[1,2,4,45,53,353,3,5,35]
+# count = 0
+# for i in li:
+#     count+=1
+# print(count)
+#===========================================================================
+
+# FIND THE COMMAN ELEMENNT
+
+# l1 = [1,2,3,4,5]
+# l2 = [4,5,6,7,8]
+
+# for i in range(len(l1)):
+#     for j in range(len(l2)):
+#         if l1[i]==l2[j]:
+#             print(l1[i], end=" ")
+
+# for i in range(len(l1)):
+#     if l1[i] in l2:
+#         print(l1[i], end=" ")
+#===========================================================================
+
+# check weather the list id plaindrome or not?
+
+# l1 = [1,2,9]
+# is_plaindorme = True
+# for i in range(len(l1)):
+#     if l1[i] != l1 [-(i+1)]:
+#         is_plaindorme = False
+#         break
+# if is_plaindorme:
+#     print("plaindorme")
+# else:
+#     print("not plaindorme")
+
+
+# l1 = ['aman','naman','ram']
+
+# for word in l1:
+#     if word == word[::-1]:
+#         print(word)
