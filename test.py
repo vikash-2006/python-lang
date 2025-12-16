@@ -858,10 +858,10 @@
 #     k = li[i+1]* li[len(li)]
 #     l1.append(k)
 
-pro  = 1
-li = [1,2,3,4]
-for num in li:
-    pro *= num
-for  i in range(len(li)):
-    li[i] = (pro // li[i])
-print(li)
+# pro  = 1
+# li = [1,2,3,4]
+# for num in li:
+#     pro *= num
+# for  i in range(len(li)):
+#     li[i] = (pro // li[i])
+# print(li)
