@@ -646,7 +646,15 @@
 
 #===========================================================================
 
-                # LIST
+                             # LIST
+
+# .append() --> add the element at the end of the list.
+# .extend() --> add the multiple elements at the end of the list at once.
+# .insert(index , element) --> is use to insert the element at the particular index.
+# .pop(index) --> remove element by index but it default delete the element at the last of the list.
+# .remove(elemet) --> remove element by giving to function directly. it does not return anything.
+# .count(element) --> count method is use to the occurences or the frequency of the particular element is being passed to the count method
+# .index(element) --> is use to find the index particular
 
 # reverse the string
 
@@ -722,3 +730,138 @@
 # for word in l1:
 #     if word == word[::-1]:
 #         print(word)
+
+#===========================================================================
+# even number in --> even_list
+# odd number in --> odd_list
+
+# li = [1,2,3,4,5,6,7,8,9,10]
+# even_list=[]
+# odd_list=[]
+# for num in li:
+#     if num % 2 == 0:
+#         even_list.append(num)
+#     else:
+#         odd_list.append(num)
+# print(odd_list)
+# print(even_list)
+
+#===========================================================================
+
+# sum of list and list should be blanck.
+
+#       FIRST METHOD
+# li = [1,2,3,4,5,6,7,8]
+# sum = 0
+# while len(li) != 0:
+#     element = li.pop()
+#     sum += element
+# print("List is :- ",li)
+# print("Sum is :- ",sum)
+
+#       SECOND METHOD
+# for i in range(len(li)):
+#     i = 0
+#     sum+=li.pop()
+# print("List is :- ",li)
+# print("Sum is :- ",sum)
+
+#===========================================================================
+
+# li = [1,2,3,2,1,3,4,1,2]
+# a=li.count(1)
+# print(a)
+
+#===========================================================================
+
+# li = [1,2,3,4,5,6,7,8,9,10]
+# a=li.index(10)
+# print(a)
+
+#===========================================================================
+
+# li = [1,2,2,3,5,6,7,8,7,]
+# n = int(input("Enter the key :- "))
+# for i in range(len(li)):
+#     if n == li[i]:
+#         print(n,"is found at ",i)
+#         break
+
+#===========================================================================
+
+# TARGET SUM
+
+# li = [1,2,3,4,5]
+# target = 7
+# for i in range(len(li)):
+#     for j in range(i+1,len(li)):
+#         if li[i] + li[j] == target:
+#             print(li[i], li[j])
+#         break
+#===========================================================================
+
+# largest word
+
+# li = ['this','is','sentence']
+# max = li[0]
+# for word in li:
+#     if len(max) < len(word):
+#         max = len(word)
+#         print(max , word)
+#===========================================================================
+
+
+# k time rotation
+# li = [1,2,3,4,5]
+# k = int(input("Enter the number :- "))
+
+# li = li[-k:] + li[:-k]
+
+# print(li)
+
+# step 1 -> reversed the whole list
+# step 2 -> reversed the list from k-1 index
+# step 3 -> reverse the list from k to lenn(li)-1
+
+# li =  [1,2,3,4,5]
+
+# left = 0
+# right = len(li)-1
+# while left < right:
+#     li[left], li[right] = li[right], li[left]
+#     left += 1   
+#     right -= 1
+# print(li)
+# left = 0
+# right = k-1
+# while left < right:
+#     li[left], li[right] = li[right], li[left]
+#     left += 1
+#     right -= 1
+# print(li)
+# #   step 3
+# left = k
+# right = len(li)-1           
+# while left < right:
+#     li[left], li[right] = li[right], li[left]
+#     left += 1
+#     right -= 1
+# print(li)
+
+#===========================================================================
+
+# product except self
+# [1,2,3,4] -> [24,12,8,6]
+# li = [1,2,3,4]
+# l1=[]
+# for i in range(len(li)):
+#     k = li[i+1]* li[len(li)]
+#     l1.append(k)
+
+pro  = 1
+li = [1,2,3,4]
+for num in li:
+    pro *= num
+for  i in range(len(li)):
+    li[i] = (pro // li[i])
+print(li)
