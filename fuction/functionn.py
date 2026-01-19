@@ -168,14 +168,14 @@
 # If you want to the value of the global var then use global keyword to access the variable
 
 
-var = 1
-def count():
-    # local variable is accessible only inside the function  we cant use use outside the function
-    var2 = 2
-    global var 
-    var = 20
-count()
-print(var)
+# var = 1
+# def count():
+#     # local variable is accessible only inside the function  we cant use use outside the function
+#     var2 = 2
+#     global var 
+#     var = 20
+# count()
+# print(var)
 
 
 # =============================================================================
@@ -185,15 +185,153 @@ print(var)
 # count -> globle variable 
 
 # Global variable
-count = 1
+# count = 1
 
-def increase_count():
-    global count
-    count = count + 1
-    print("Second -> Count =", count)
+# def increase_count():
+#     global count
+#     count = count + 1
+#     print("Second -> Count =", count)
 
-# First value
-print("First -> Count =", count)
+# # First value
+# print("First -> Count =", count)
 
-# Function call to change global variable
-increase_count()
+# # Function call to change global variable
+# increase_count()
+
+
+# =============================================================================
+#NESTED FUNCTION
+# High order function are the function which are use to call another function as an parameter
+# Into this high order function we basically pass other functions as an argument of another function
+
+# def hello(fun):
+#     print("Hello from hello function")
+#     # Here we called the another functin inside function
+#     fun()
+
+# def fun():
+#     print("Hello from function")
+# # Here we pass the another function as an argument
+# hello(fun)
+
+
+# =============================================================================
+
+#  Into the high order fuunction wwe can define the another function
+
+# def outer():
+#     print("Outer function is running")
+#     def inner():
+#         print("Inner function is runninng")
+#     inner()
+
+# outer()
+
+# =============================================================================
+# write a function to deine function inside function in which we pass the two numbers and the inner function prints
+# the sum of two numbers -->>  call into the outer function
+
+# def two(a,b):
+
+#     def sum(a,b):
+#         print(a+b)
+#     sum(a,b)
+
+# two(5,5)
+
+# def outer(num1,num2):
+
+#     def add(a, b):
+#         return a+b
+#     sum = add(num1, num2)
+#     return sum
+
+# result = outer(5,5)
+
+# print("The sum is :-",result)
+
+# =============================================================================
+
+
+# write a program to check a num is even or not
+# write a program to check wheather a num is prime or not
+
+# def even(num):
+#     if num % 2 == 0:
+#         return True
+#     else:
+#         return False
+
+# def prime(num):
+#     for i in range(2, num//2):
+#         if num % i == 0:
+#             return False
+#         else:
+#             return True
+
+# number = int(input("Enter a number :- "))
+
+# if even(number):
+#     print(f"{number} is even")
+# else:
+#     print(f"{number} is odd")
+
+# if prime(number):
+#     print(f"{number} is prime")
+# else:
+#     print(f"{number} is not prime")
+
+# =============================================================================
+
+# write a program to rverse a  list
+
+# def rev(li):
+#     left = 0
+#     right = len(li)-1 
+
+#     while left <= right:
+#         li[left],li[right]=li[right],li[left]
+#         left+=1
+#         right-=1
+#     print(li)
+
+# li = [1,2,3,4,5,6]
+
+# rev(li)
+
+# =============================================================================
+
+# VARIABLE LENGTH ARGUMENT -->> varible length are used to pass the varriable length of the
+# arguments into the function at the time of function calling
+
+# def add(*args):
+
+#     su = 0
+
+#     for ele in args:
+#         su += ele
+#     return su
+
+# print(su)
+# add(1,2,3,4,5)
+
+# =============================================================================
+
+# variable lenth is keyword argument -->> In which we can keyword arguments
+# it return the data in the form of dictionary
+
+def details(**args):
+
+    for key, value in args.items():
+        print(f'{key} -->>  {value}') 
+
+details(name =  'Rahul', batch = 'a23', location = 'Jaipur')
+
+
+
+
+
+# recursion
+# lambda function
+# map, reduce, filter
+

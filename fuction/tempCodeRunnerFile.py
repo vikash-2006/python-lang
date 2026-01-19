@@ -1,7 +1,10 @@
-def area(length, width = 5):
+def add(*args):
 
-#     return f'The area is {length*width}'
+#     su = 0
 
-# length = int(input("Enter length :- "))
-# msg = area(length)
-# print(msg)
+#     for ele in args:
+#         su += ele
+#     return su
+
+# print(su)
+# add(1,2,3,4,5)
