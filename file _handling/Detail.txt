@@ -1,0 +1,5 @@
+This is the details file.
+My name is John Doe.
+I am a software developer.
+I love coding in Python.
+I also enjoy learning new technologies.
