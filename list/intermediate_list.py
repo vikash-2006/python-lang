@@ -24,7 +24,7 @@ for i in range(len(li)):
 print("The lowest element in list is :- ",min_ele)
 #===========================================================================================
 
-# 3. Create a new list that contains the elements of the original list in reverse order,
+# 3. original list in reverse order,
 #  without using the reverse() method or list slicing.
 
 li = [1,2,3,4,5]

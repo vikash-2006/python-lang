@@ -220,3 +220,8 @@ for key in d_square:
     product *= d_square[key]
 
 print("Product =", product)
+
+
+# -------------------------------------------------------
+# Q21. Find product of all values in dictionary
+# -------------------------------------------------------
